@@ -1,0 +1,15 @@
+<ul>
+    <% @tasks.each do |task| %>
+    <li>
+      <!-- -->
+      <% if task.completed %>
+       ☑
+      <% else %>
+       🔲
+      <% end %>
+      <%= task.title %>
+      <%= task.details %>
+    </li>
+
+    <%end%>
+</ul>
